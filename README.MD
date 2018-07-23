@@ -1,9 +1,10 @@
 ## A compose file for jenkins/jenkins:lts
 
 ---
-* Reason: 
+Reason: 
+
 ``` Well, taking a refresher course on jenkins.  
-I find that I really really hate the old school of actually installing software.
+I find now... I really really hate the old school of actually installing software.
 Actually, I also hate writing dockerfiles at this point in history 
 The glory of docker hub.
 ```
