@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+   jenkins:
+          environment:
+            - JAVA_OPTS='-Dhudson.footerURL=http://ncr.com jenkins/jenkins:lts -Djava.util.logging.config.file=/var/jenkins_home/log.properties'
+          image: jenkins/jenkins:lts
+          ports:
+            - 8080:8080
+            - 50000:50000
+          volumes:
+            - ./jenkins_home:/var/jenkins_home
+          
+volumes:
+   jenkins_home:
