@@ -1,9 +1,11 @@
 version: '3.5'
 services:
    jenkins:
+          build: ./
+          image: jenkins-docker:lts 
           environment:
-            - JAVA_OPTS='-Dhudson.footerURL=http://ncr.com jenkins/jenkins:lts -Djava.util.logging.config.file=/var/jenkins_home/log.properties'
-          image: jenkins/jenkins:lts
+            - JAVA_OPTS='-Dhudson.footerURL=http://ware2go.com jenkins/jenkins:lts -Djava.util.logging.config.file=/var/jenkins_home/log.properties'
+          image: jenkins-docker:lts
           ports:
             - 8080:8080
             - 50000:50000
